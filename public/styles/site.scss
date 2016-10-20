@@ -14,6 +14,30 @@
 
 @import "site/variables";
 
+body {
+	font-family: 'Microsoft YaHei';
+}
+.jumbotron {
+	padding: 5%;
+}
+.jumbotron p {
+	font-size: 18px;
+	line-height: 2;
+}
+.container h1 {
+	font-size: 24px;
+	background-color: #46A4F1;
+	padding: 15px 10px;
+	color: #fff;
+}
+.container .post {
+	background: #1b6d85;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0,0,0,.3);
+	padding: 10px 5%;
+	color: #fff;
+}
 
 // Site Styles
 // ===========
