@@ -5796,10 +5796,45 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  font-family: 'Microsoft YaHei'; }
+  font-family: 'Microsoft YaHei';
+  background-color: #333333; }
 
-.jumbotron {
-  padding: 5%; }
+.navbar {
+  margin-bottom: 0;
+  min-height: 70px; }
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 6px 6px 0 0; } }
+.navbar-default {
+  background-color: #30547A;
+  border: none; }
+
+.navbar-default .navbar-brand {
+  color: #fff;
+  line-height: 40px;
+  height: 70px; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  line-height: 40px;
+  padding: 15px 40px; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #fff; }
+
+.navbar-default .navbar-nav > .active > a {
+  color: #fff;
+  background-color: #52A1F4; }
+  .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #52A1F4; }
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding: 5%;
+  border-radius: 0 0 6px 6px; }
 
 .jumbotron p {
   font-size: 18px;
@@ -5811,18 +5846,33 @@ body {
   padding: 15px 10px;
   color: #fff; }
 
+.container h1.welcome {
+  font-size: 80px;
+  padding: 15px 10px;
+  color: #8A6969;
+  background: none; }
+
 .container .post {
   background: #1b6d85;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  padding: 10px 5%;
+  padding: 0 5% 10px;
   color: #fff; }
+
+.container .post h2 {
+  margin: 0;
+  border-bottom: 1px solid #ccc; }
+  .container .post h2 a {
+    color: #fff;
+    line-height: 2.5; }
 
 #header {
   margin-top: 30px; }
 
 #footer {
+  position: fixed;
+  bottom: 0;
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
