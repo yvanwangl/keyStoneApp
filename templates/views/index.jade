@@ -13,11 +13,12 @@ block content
 		if user && user.canAccessKeystone
 			p
 				a(href='/keystone').btn.btn-lg.btn-primary 管理员访问
-		//else
-		//	p We have created a default Admin user for you with the email <strong>1012305328@qq.com</strong> and the password <strong>admin</strong>.
-		//	p
-		//		a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-		//		|  to use the Admin UI.
+		else
+			p We have created a default Admin user for you 
+			//p with the email <strong>1012305328@qq.com</strong> and the password <strong>admin</strong>.
+			p
+				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
+				|  to use the Admin UI.
 		hr
 		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
 			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
