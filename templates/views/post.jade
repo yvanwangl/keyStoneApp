@@ -3,16 +3,18 @@ extends ../layouts/default
 block content
 	.container: .row.blogRow: .col-sm-10.col-sm-offset-1.col-md-12.col-md-offset-2.blogContainer
 		article
-			p: a(href='/blog') &larr; back to the blog
+			p: a.back(href='/blog') &larr; back to the blog
 			hr
 			if !data.post
 				h2 Invalid Post.
 			else
 				header
 					h1.blogTitle= data.post.title
-					h5 Posted 
+					h5
+						if data.post.author
+							|作者： #{data.post.author.name.first}
 						if data.post.publishedDate
-							| on #{data.post._.publishedDate.format('MMMM Do, YYYY')} 
+							|日期： #{data.post._.publishedDate.format('MMMM Do, YYYY')} 
 						if data.post.categories && data.post.categories.length
 							| in 
 							each cat, cat_i in data.post.categories
@@ -20,9 +22,7 @@ block content
 								if cat_i < data.post.categories.length - 1
 									| , 
 								else
-									|  
-						if data.post.author
-							| by #{data.post.author.name.first}
+									|,
 				.post
 					if data.post.image.exists
 						.image-wrap: img(src=data.post._.image.fit(750,450)).img-responsive

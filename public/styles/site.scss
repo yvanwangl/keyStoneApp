@@ -49,6 +49,7 @@ body {
 	&:hover {
 		color: #fff;
 	}
+	font-size: 16px;
 }
 .navbar-default .navbar-nav > .active > a {
 	&:hover,
@@ -86,13 +87,40 @@ body {
 	display: block;
 	background-color: #fff;
 	color: #000;
+	text-align: center;
 }
 .container .row.blogRow {
 	margin: 0;
 }
+
+.container .row.blogRow .back {
+	padding: 10px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #23527c;
+	border-radius: 5px;
+	transition: all ease-in-out .2s;
+	&:hover {
+		text-decoration: none;
+		background-color: #23527c;
+		color: #fff;
+	}
+}
+
+.container .row.blogRow .post p {
+	font-size: 18px;
+	line-height: 2;
+	& span {
+		font-size: 18px;
+		line-height: 2;
+	}
+}
 .container .row .blogContainer {
 	margin-left: 0 !important;
 	background-color: #fff;
+	& h5 {
+		text-align: center;
+	}
 }
 .container .post {
 	background: #fff;
@@ -108,11 +136,19 @@ body {
 	& a {
 		color: #1b6d85;
 		line-height: 2.5;
+		text-decoration: none;
 	}
 }
 .container .row .blogContainer .post {
 	box-shadow: none;
 	border:none;
+}
+
+.container.contact .row {
+	margin: 0;
+	background-color: #eeeeee;
+	padding: 50px;
+	border-radius: 0 0 6px 6px;
 }
 
 // Site Styles
