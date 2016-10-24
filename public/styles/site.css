@@ -5861,8 +5861,19 @@ body {
   color: #000;
   text-align: center; }
 
+.container .post h2.postTitle a {
+  color: #1b6d85;
+  line-height: 2.5;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 15px 0;
+  display: inline-block; }
+
 .container .row.blogRow {
   margin: 0; }
+  .container .row.blogRow .text-muted {
+    font-size: 16px;
+    padding: 10px 0; }
 
 .container .row.blogRow .back {
   padding: 10px 20px;
